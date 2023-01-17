@@ -11,6 +11,8 @@ const Password = document.getElementById('Password');
 const confirm = document.getElementById('confirm');
 const create = document.getElementById('btn');
 const or = document.getElementById('or')
+const login = document.getElementById('btn1');
+const or1 = document.getElementById('or1')
 function showError(input, message) {
     const formcontrol = input.parentElement;
     formcontrol.className = 'form-control error';
@@ -73,4 +75,14 @@ create.addEventListener('click',() => {
     or.style.display = 'none';
     create.style.display = 'none';
     form2.style.display = 'block';
+    login.style.display = 'block';
+    or1.style.display = 'flex';
+})
+login.addEventListener('click',() => {
+    form1.style.display = 'block';
+    or.style.display = 'flex';
+    create.style.display = 'block';
+    form2.style.display = 'none';
+    login.style.display = 'none';
+    or1.style.display = 'none';
 })

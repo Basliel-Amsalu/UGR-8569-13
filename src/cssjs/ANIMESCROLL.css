@@ -578,6 +578,9 @@ ol li span{
     padding: 20px;
     display: none;
 }
+#or1, #btn1{
+    display: none;
+}
 .form-control.success input{
     border-color: #23cc71;
 }

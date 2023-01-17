@@ -4,46 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssjs\ANIMESCROLL.css">
     <title>ANIMESCROLL CONTACT US</title>
 </head>
 <body>
     <header>
-        <div class="container">
-            <div id="head"><h3><span>ANIME</span>SCROLL</h3><form class="search"><input type="search" id="search" title = "search"placeholder="search"><label for="search"><button class="search-btn"><span>&#128269;</span></button></label></form></div>
+        <div class="head-container">
+            <div id="head"><h1><span>ANIME</span>SCROLL</h1><form class="search"><input type="search" id="search" class="hide" title = "search"placeholder="search"><label for="search"><button class="search-btn"><span>&#128269;</span></button></label></form></div>
+            <button class="dropdown1"><span>&#128269;</span></button>
+            <button class="dropdown" id="dropdown"><span>&#9776;</span></button>
             <nav>
-                <ul>
-                    <li> <a href="HOME.html">HOME</a> </li>
-                    <li><a href="EXPLORE.html">EXPLORE</a></li>
-                    <li><a href="TV SERIES.html">TV SERIES</a></li>
-                    <li><a href="MOVIES.html">MOVIES</a></li>
-                    <li><a href="WATCH LIST.html">WATCH LIST</a></li>
-                    <li><a href="SIGN UP-IN.html">SIGN UP/IN</a></li>
+                <ul class ="toggle-list active" id="toggle-list">
+                    <li class="links"><a href="HOME.html">HOME</a> </li>
+                    <li class="links"><a href="EXPLORE.html">EXPLORE</a></li>
+                    <li class="links"><a href="TV SERIES.html">TV SERIES</a></li>
+                    <li class="links"><a href="MOVIES.html">MOVIES</a></li>
+                    <li class="links"><a href="WATCH LIST.html">WATCH LIST</a></li>
+                    <li class="links"><a href="SIGN UP-IN.html">SIGN UP/IN</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <section class="contact">
-        <h1>CONTACT INFORMATION</h1>
         <div class="contact-container">
-            <div class="contact-info">
-                <p>
-                    Email : acychappiekiller@gmail.com<br>
-                    Instagram: @chappiedoom <br>
-                    Facebook: @chappieconnor <br>
-                    Telegram: @cbchaspie
-                </p>
-            </div>
-            <div class="comment">
-                <form>
-                    <label for="comment">Comment: </label>
-                    <input type="text" id ="comment" title ="comment"placeholder="Comment">
-                    <button type="submit">submit</button>
-                </form>
+            <div class="inform">
+                <div class="contact-info">
+                    <h1>CONTACT INFORMATION</h1>
+                    <p>
+                        Email : acychappiekiller@gmail.com<br>
+                        Instagram: @chappiedoom <br>
+                        Facebook: @chappieconnor <br>
+                        Telegram: @cbchaspie
+                    </p>
+                </div>
+                <div class="comment">
+                    <form>
+                        <label for="comment">Comment: </label>
+                        <input type="text" id ="comment" title ="comment"placeholder="Comment">
+                        <button type="submit">submit</button>
+                    </form>
+                </div>
             </div>
             <div class="contactus">
                 <p>
-                    If you have business inquiries or other questions, please send an email to: acychappiekiller@gmail.com<br>
-                    if you have any comments regarding this website we will accept any inquiries you might have
+                    If you have business inquiries or other questions,<br> please send an email to: acychappiekiller@gmail.com
+                    if you have any comments regarding this website<br> we will accept any inquiries you might have
                 </p>
             </div>
         </div>
@@ -54,10 +59,11 @@
                 <a href="ABOUT PAGE.html">ABOUT PAGE</a>
             </li>
             <li>
-                <a href="CONTACT US.html">CONTACT US</a>
+                <a class="current-link" href="CONTACT US.html">CONTACT US</a>
             </li>
         </ul>
         <p>ANIMESCROLL copyright &copy; all rights reserved</p>
     </footer>
+    <script src="cssjs\drop.js"></script>
 </body>
 </html> 

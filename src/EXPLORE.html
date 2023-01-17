@@ -4,32 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssjs\ANIMESCROLL.css">
+    <!-- <script src="ANIMESCROLL.js"></script> -->
     <title>ANIMESCROLL EXPLORE</title>
 </head>
 <body>
     <header>
-        <div class="container">
-            <div id="head"><h1><span>ANIME</span>SCROLL</h1><form class="search"><input type="search" id="search" title = "search"placeholder="search"><label for="search"><button class="search-btn"><span>&#128269;</span></button></label></form></div>
+        <div class="head-container">
+            <div id="head"><h1><span>ANIME</span>SCROLL</h1><form class="search"><input type="search" class="hide" id="search" title = "search"placeholder="search"><label for="search"><button class="search-btn"><span>&#128269;</span></button></label></form></div>
+            <button class="dropdown1"><span>&#128269;</span></button>
+            <button class="dropdown" id="dropdown"><span>&#9776;</span></button>
             <nav>
-                <ul>
-                    <li> <a href="HOME.html">HOME</a> </li> 
-                    <li><a href="EXPLORE.html">EXPLORE</a></li>
-                    <li><a href="TV SERIES.html">TV SERIES</a></li>
-                    <li><a href="MOVIES.html">MOVIES</a></li>
-                    <li><a href="WATCH LIST.html">WATCH LIST</a></li>
-                    <li><a href="SIGN UP-IN.html">SIGN UP/IN</a></li>
+                <ul class ="toggle-list active" id="toggle-list">
+                    <li class="links"><a href="HOME.html">HOME</a> </li>
+                    <li class="links"><a class="current-link" href="EXPLORE.html">EXPLORE</a></li>
+                    <li class="links"><a href="TV SERIES.html">TV SERIES</a></li>
+                    <li class="links"><a href="MOVIES.html">MOVIES</a></li>
+                    <li class="links"><a href="WATCH LIST.html">WATCH LIST</a></li>
+                    <li class="links"><a href="SIGN UP-IN.html">SIGN UP/IN</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <section class = "explore" id="explore">
-        <div class="catgories">
+        <div class="catagories">
             <label for="Catagories">Catagories:</label>
-            <select name="Catagories" id="Catagories">
-                <option value="Seinen">Seinen</option>
-                <option value="Shounen">Shounen</option>
-                <option value="Isekai">Isekai</option>
-            </select>
+            <div class="select">
+                <select name="Catagories" id="Catagories">
+                    <option value="">Select Anime catagorie</option>
+                    <option value="Seinen">Seinen</option>
+                    <option value="Shounen">Shounen</option>
+                    <option value="Isekai">Isekai</option>
+                </select>
+            </div>
         </div>
         <div class="container">
             <div class="recent">
@@ -91,9 +98,8 @@
                         <h3>Spyxfamily</h3>
                         <span>23 min | 1 | Isekai</span>
                     </div>
-                    <h2>TV SERIES<span><a href="TV SERIES.html"><button id="goto"><span>&#8594;</span></button></a></span></h2>
                 </div>
-            </div>
+                <h2 class="link">TV SERIES<span><a href="TV SERIES.html"><button id="goto"><span>&#8594;</span></button></a></span></h2>
                 <div class="movie-container">
                     <div class="box">
                         <div class="box-img">
@@ -152,10 +158,10 @@
                         <span>93 min | 1 | Isekai</span>
                     </div>
                 </div>
-                <h2>MOVIES<span><a href="MOVIES.html"><button id="goto"><span>&#8594;</span></button></a></span></h2>
+                <h2 class="link">MOVIES<span><a href="MOVIES.html"><button id="goto"><span>&#8594;</span></button></a></span></h2>
             </div>
             <div class="toprated">
-                <h2>TOP RATED</h2>
+                <h2 class = "heading">TOP RATED</h2>
                 <ol>
                     <li><img src="img\naruto.jpg" alt="naruto img"><span>NARUTO</span></li>
                     <li><img src="img\one piece.jpg" alt="one piece img"><span>ONE PIECE</span></li>
@@ -177,5 +183,6 @@
         </ul>
         <p>ANIMESCROLL copyright &copy; all rights reserved</p>
     </footer>
+    <script src="cssjs\drop.js"></script>
 </body>
 </html> 

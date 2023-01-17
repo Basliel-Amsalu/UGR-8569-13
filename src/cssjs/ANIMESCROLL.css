@@ -908,7 +908,7 @@ td:nth-child(odd){
     }
 }
 .slide:first-child {
-    background: url('./img/681016.jpg') no-repeat
+    background: url('../img/681016.jpg') no-repeat
       center top/cover;
 }
 .slide:nth-child(2) {

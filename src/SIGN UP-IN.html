@@ -4,63 +4,87 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssjs\ANIMESCROLL.css">
     <title>ANIMESCROLL SIGN IN/UP</title>
 </head>
 <body>
     <header>
-        <div class="container">
-            <div id="head"><h3><span>ANIME</span>SCROLL</h3><form class="search"><input type="search" id="search" title = "search"placeholder="search"><label for="search"><button class="search-btn"><span>&#128269;</span></button></label></form></div>
+        <div class="head-container">
+            <div id="head"><h1><span>ANIME</span>SCROLL</h1><form class="search"><input type="search" id="search" class="hide" title = "search"placeholder="search"><label for="search"><button class="search-btn"><span>&#128269;</span></button></label></form></div>
+            <button class="dropdown1"><span>&#128269;</span></button>
+            <button class="dropdown" id="dropdown"><span>&#9776;</span></button>
             <nav>
-                <ul>
-                    <li> <a href="HOME.html">HOME</a> </li>
-                    <li><a href="EXPLORE.html">EXPLORE</a></li>
-                    <li><a href="TV SERIES.html">TV SERIES</a></li>
-                    <li><a href="MOVIES.html">MOVIES</a></li>
-                    <li><a href="WATCH LIST.html">WATCH LIST</a></li>
-                    <li><a href="SIGN UP-IN.html">SIGN UP/IN</a></li>
+                <ul class ="toggle-list active" id="toggle-list">
+                    <li class="links"><a href="HOME.html">HOME</a> </li>
+                    <li class="links"><a href="EXPLORE.html">EXPLORE</a></li>
+                    <li class="links"><a href="TV SERIES.html">TV SERIES</a></li>
+                    <li class="links"><a href="MOVIES.html">MOVIES</a></li>
+                    <li class="links"><a href="WATCH LIST.html">WATCH LIST</a></li>
+                    <li class="links"><a class="current-link" href="SIGN UP-IN.html">SIGN UP/IN</a></li>
                 </ul>
             </nav>
         </div>
     </header>
     <section class="sign">
         <div class="sign-container">
-            <form class="signin">
+            <form class="signin" id="signin">
                 <h1>SIGN-IN</h1>
-                <div class="danger"><p>please enter the correct username</p></div>
-                <label for="username">User name: </label>
-                <input type="text" id ="username" title = "username"placeholder="insert your user name"required>
-                <div class="danger"><p>please enter the correct email</p></div>
-                <label for="email">Email: </label>
-                <input type="email" id ="email" title ="email"placeholder="insert your email" required>
-                <div class="danger"><p>please fill the correct password</p></div>
-                <label for="password">Password: </label>
-                <input type="password" id ="password" title = "password" placeholder="insert password" required>
-                <input type="submit" value="sign in">
+                <div class="form-control">
+                    <label for="username">User name: </label>
+                    <input type="text" id ="username" title = "username"placeholder="insert your user name">
+                    <small class="danger danger-user"><p>please enter the correct username</p></small>
+                </div>
+                <div class="form-control">
+                    <label for="email">Email: </label>
+                    <input type="text" id ="email" title ="email"placeholder="insert your email">
+                    <small class="danger danger-email"><p>please enter the correct email</p></small>
+                </div>
+                <div class="form-control">
+                    <label for="password">Password: </label>
+                    <input type="password" id ="password" title = "password" placeholder="insert password">
+                    <small class="danger danger-pass"><p>please fill the correct password</p></small>
+                </div>
+                <div><input type="submit" value="sign in"></div>
             </form>
-            <p>___<span>or</span>___</p>
-            <button class = "btn">create account</button>
-            <form class="signup">
+            <div class="or" id="or">
+                <hr class="bar">
+                <span>or</span>
+                <hr class="bar">
+            </div>
+            <button class = "btn" id="btn">create account</button>
+            <form class="signup" id="signup">
                 <h1>SIGN-UP</h1>
-                <div class="danger"><p>please enter the correct information</p></div>
-                <label for="firstname">First name: </label>
-                <input type="text" id ="firstname" title = "firstname"placeholder="insert your first name" required>
-                <div class="danger"><p>please fill the correct information</p></div>
-                <label for="lastname">Last name: </label>
-                <input type="text" id ="lastname" title = "lastname" placeholder="insert your last name"required>
-                <div class="danger"><p>please fill the correct information</p></div>
-                <label for="Username">User name: </label>
-                <input type="text" id ="Username" title = "Username" placeholder="insert your user name"required>
-                <div class="danger"><p>please fill the correct information</p></div>
-                <label for="Email">Email: </label>
-                <input type="email" id ="Email" title = "Email" placeholder="insert your email" required>
-                <div class="danger"><p>please fill the correct information</p></div>
-                <label for="Password">Password: </label>
-                <input type="password" id ="Password" title = "Password" placeholder = "insert password" required>
-                <div class="info"><p>the password must be 8 characters long</p></div>
-                <div class="danger"><p>please fill the correct password</p></div>
-                <label for="confirm">Confirm password: </label>
-                <input type="password" id ="confirm" title ="confirm"placeholder="confirm password" required>
-                <input type="submit" value="sign up">
+                <div class="form-control">
+                    <label for="firstname">First name: </label>
+                    <input type="text" id ="firstname" title = "firstname"placeholder="insert your first name">
+                    <small class="danger danger-fn"><p>please enter the correct information</p></small>
+                </div>
+                <div class="form-control">
+                    <label for="lastname">Last name: </label>
+                    <input type="text" id ="lastname" title = "lastname" placeholder="insert your last name">
+                    <small class="danger danger-ln"><p>please fill the correct information</p></small>
+                </div>
+                <div class="form-control">
+                    <label for="Username">User name: </label>
+                    <input type="text" id ="Username" title = "Username" placeholder="insert your user name">
+                    <small class="danger danger-un"><p>please fill the correct information</p></small>
+                </div>
+                <div class="form-control">
+                    <label for="Email">Email: </label>
+                    <input type="text" id ="Email" title = "Email" placeholder="insert your email">
+                    <small class="danger danger-em"><p>please fill the correct information</p></small>
+                </div>
+                <div class="form-control">
+                    <label for="Password">Password: </label>
+                    <input type="password" id ="Password" title = "Password" placeholder = "insert password">
+                    <small class="danger"><p>the password must be 8 characters long</p></small>
+                </div>
+                <div class="form-control">
+                    <label for="confirm">Confirm password: </label>
+                    <input type="password" id ="confirm" title ="confirm"placeholder="confirm password">
+                    <small class="danger danger-cpw"><p>please fill the correct password</p></small>
+                </div>
+                <div><input type="submit" value="sign up"></div>
             </form>
         </div>
 
@@ -76,5 +100,7 @@
         </ul>
         <p>ANIMESCROLL copyright &copy; all rights reserved</p>
     </footer>
+    <script src="cssjs\drop.js"></script>
+    <script src="cssjs\slide.js"></script>
 </body>
 </html> 

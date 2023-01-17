@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cssjs\ANIMESCROLL.css">
     <title>ANIMESCROLL</title>
 </head>
 <body>
-    <header>
-        <div class="home-container">
-            <div id="head"><h1><span>ANIME</span>SCROLL</h1><form class="search"><input type="search" id="search" title = "search"placeholder="search"><label for="search"><button class="search-btn"><span>&#128269;</span></button></label></form></div>
+    <header class="home-head">
+        <div class="head-container">
+            <div id="head"><h1><span>ANIME</span>SCROLL</h1><form class="search"><input type="search" id="search" class="hide" title = "search"placeholder="search"><label for="search"><button class="search-btn"><span>&#128269;</span></button></label></form></div>
+            <button class="dropdown1"><span>&#128269;</span></button>
+            <button class="dropdown" id="dropdown"><span>&#9776;</span></button>
             <nav>
-                <ul>
-                    <li> <a href="HOME.html">HOME</a> </li>
-                    <li><a href="EXPLORE.html">EXPLORE</a></li>
-                    <li><a href="TV SERIES.html">TV SERIES</a></li>
-                    <li><a href="MOVIES.html">MOVIES</a></li>
-                    <li><a href="WATCH LIST.html">WATCH LIST</a></li>
-                    <li><a href="SIGN UP-IN.html">SIGN UP/IN</a></li>
+                <ul class ="toggle-list active" id="toggle-list">
+                    <li class="links"><a class="current-link" href="HOME.html">HOME</a> </li>
+                    <li class="links"><a href="EXPLORE.html">EXPLORE</a></li>
+                    <li class="links"><a href="TV SERIES.html">TV SERIES</a></li>
+                    <li class="links"><a href="MOVIES.html">MOVIES</a></li>
+                    <li class="links"><a href="WATCH LIST.html">WATCH LIST</a></li>
+                    <li class="links"><a href="SIGN UP-IN.html">SIGN UP/IN</a></li>
                 </ul>
             </nav>
         </div>
@@ -44,12 +47,14 @@
                     <h1>BINGE WATCH FOR FREE</h1>
                     <p>A PLATFORM THAT ALLOWS YOU TO STREAM YOUR ANIME FOR FREE</p>
                 </div>
-                
             </div>
+        </div>
+        <div class="buttons">
             <button id="prev"><span>&#8592;</span></button>
             <button id="next"><span>&#8594;</span></button>
+        </div>
     </section>
-    <footer>
+    <footer class="home-foot">
         <ul>
             <li> 
                 <a href="ABOUT PAGE.html">ABOUT PAGE</a>
@@ -60,5 +65,7 @@
         </ul>
         <p>ANIMESCROLL copyright &copy; all rights reserved</p>
     </footer>
+    <script src="cssjs\slide.js"></script>
+    <script src="cssjs\drop.js"></script>
 </body>
 </html> 

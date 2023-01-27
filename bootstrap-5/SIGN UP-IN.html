@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>ANIMESCROLL EXPLORE</title>
+</head>
+<!-- generally i used inline styling to get background colors
+         ,width and height and positioning amounts that i needed that were not 
+         present in bootstrap -->
+<body class="text-white" style="background: rgb(15, 15, 15);">
+    <header class="navbar navbar-expand-md navbar-dark mb-4 pt-3 sticky-top" style="background:rgb(24, 22, 22);">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                <h1 class=" fs-2"><span class="text-danger fst-italic">ANIME</span>SCROLL</h1>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span class="navbar-toggler-icon"></span></button>
+            <form class="collapse navbar-collapse d-flex justify-content-start align-items-center" id="navmenu">
+                <input type="search" class="collapse navbar-collapse bg-dark border py-2 px-2 h-50 w-25 rounded text-bg-primary" id="navmenu" title = "search"placeholder="search">
+            </form>
+            <nav class="collapse navbar-collapse" id="navmenu">
+                <ul class ="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="HOME.html">HOME</a> </li>
+                    <li class="nav-item"><a class="nav-link" href="EXPLORE.html">EXPLORE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="TV SERIES.html">TV SERIES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="MOVIES.html">MOVIES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="WATCH LIST.html">WATCH LIST</a></li>
+                    <li class="nav-item"><a class="nav-link text-danger" href="SIGN UP-IN.html">SIGN UP/IN</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="sign w-50 my-4 d-flex flex-column justify-content-center align-items-center mx-auto">
+        <div class="sign-container pb-3 d-flex flex-column justify-content-center align-items-center" style="width: 80%;">
+            <form class="signin p-3 pb-5 was-validated" id="signin" style="background-color: rgb(33, 30, 30); width: 80%;">
+                <h1 class=" text-center my-4">SIGN-IN</h1>
+                <div class="mb-4 has-validation">
+                    <label class="form-label" for="username">User name: </label>
+                    <input class="form-control border-dark-subtle px-4 py-2 mb-1 text-white" style="background: #181818;" type=" text" id ="username" title = "username"placeholder="insert your user name">
+                    <small class="danger d-none danger-user"><p>please enter the correct username</p></small>
+                </div>
+                <div class="mb-4 has-validation">
+                    <label class="form-label" for="email">Email: </label>
+                    <input class="form-control border-dark-subtle px-4 py-2 mb-1 text-white" style="background: #181818; " type=" text" id ="email" title ="email"placeholder="insert your email">
+                    <small class="danger d-none danger-email"><p>please enter the correct email</p></small>
+                </div>
+                <div class="mb-4 has-validation">
+                    <label class="form-label" for="password">Password: </label>
+                    <input class="form-control border-dark-subtle px-4 py-2 mb-1 text-white" style="background: #181818;" type="password" id ="password" title = "password" placeholder="insert password">
+                    <small class="danger d-none danger-pass"><p>please fill the correct password</p></small>
+                </div>
+                <div><input class="form-control px-4 py-2 mt-1 mb-2 border-0 text-white" style="background: #623921;" type="submit" value="sign in"></div>
+            </form>
+            <div class="or d-flex w-50 mb-2 align-items-center" id="or">
+                <hr class="bar border-0 bg-white" style="flex: auto; height: 1px;">
+                <span class=" px-2">or</span>
+                <hr class="bar border-0 bg-white" style="flex: auto;height: 1px;">
+            </div>
+            <button class="mb-4 bg-transparent text-light w-50 px-4 py-2 border-5 border-light" id="btn">Create account</button>
+            <form class="signup p-3 pb-5 d-none" id="signup" style="background-color: rgb(33, 30, 30);width: 80%;">
+                <h1 class=" text-center my-4">SIGN-UP</h1>
+                <div class="mb-4">
+                    <label class="form-label" for="firstname">First name: </label>
+                    <input class="form-control border-dark-subtle px-4 py-2 mb-1" style="background: #181818;" type=" text" id ="firstname" title = "firstname"placeholder="insert your first name">
+                    <small class="danger d-none"><p>please enter the correct information</p></small>
+                </div>
+                <div class="mb-4">
+                    <label class="form-label" for="lastname">Last name: </label>
+                    <input class="form-control border-dark-subtle px-4 py-2 mb-1" style="background: #181818;" type=" text" id ="lastname" title = "lastname" placeholder="insert your last name">
+                    <small class="danger d-none"><p>please fill the correct information</p></small>
+                </div>
+                <div class="mb-4">
+                    <label class="form-label" for="Username">User name: </label>
+                    <input class="form-control border-dark-subtle px-4 py-2 mb-1" style="background: #181818;" type=" text" id ="Username" title = "Username" placeholder="insert your user name">
+                    <small class="danger d-none"><p>please fill the correct information</p></small>
+                </div>
+                <div class="mb-4">
+                    <label class="form-label" for="Email">Email: </label>
+                    <input class="form-control border-dark-subtle px-4 py-2 mb-1" style="background: #181818;" type=" text" id ="Email" title = "Email" placeholder="insert your email">
+                    <small class="danger d-none"><p>please fill the correct information</p></small>
+                </div>
+                <div class="mb-4">
+                    <label class="form-label" for="Password">Password: </label>
+                    <input class="form-control border-dark-subtle px-4 py-2 mb-1" style="background: #181818; " type="password" id ="Password" title = "Password" placeholder = "insert password">
+                    <small class="danger d-none"><p>the password must be 8 characters long</p></small>
+                </div>
+                <div class="mb-4">
+                    <label class="form-label" for="confirm">Confirm password: </label>
+                    <input class="form-control border-dark-subtle px-4 py-2 mb-1" style="background: #181818;" type="password" id ="confirm" title ="confirm"placeholder="confirm password">
+                    <small class="danger d-none"><p>please fill the correct password</p></small>
+                </div>
+                <div><input class="form-control px-4 py-2 mt-1 mb-2 border-0" style="background: #623921; " type="submit" value="sign up"></div>
+            </form>
+            <div class="or d-flex w-50 mb-2 align-items-center d-none" id="or1">
+                <hr class="bar border-0 bg-white" style="flex: auto; height: 1px;">
+                <span class=" px-2">or</span>
+                <hr class="bar border-0 bg-white" style="flex: auto;height: 1px;">
+            </div>
+            <button class="mb-4 bg-transparent text-light w-50 px-4 py-2 border-1 border-light d-none" id="btn1">Login</button>
+        </div>
+
+    </section>
+    <footer class="w-100 p-1" style="background:rgb(24, 22, 22);">
+        <ul class="d-flex list-unstyled">
+            <li class="nav-item m-2"> 
+                <a class=" nav-link" class=" " href="ABOUT PAGE.html">ABOUT PAGE</a>
+            </li>
+            <li class=" nav-item m-2">
+                <a class="nav-link" href="CONTACT US.html">CONTACT US</a>
+            </li>
+        </ul>
+        <p class=" text-center">ANIMESCROLL copyright &copy; all rights reserved</p>
+    </footer>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="cssjs\form.js"></script>
+</body>
+</html> 

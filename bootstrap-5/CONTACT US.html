@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>ANIMESCROLL EXPLORE</title>
+</head>
+<!-- generally i used inline styling to get background colors
+         ,width and height and positioning amounts that i needed that were not 
+         present in bootstrap -->
+<body class="text-white" style="background: rgb(15, 15, 15);">
+    <header class="navbar navbar-expand-md navbar-dark mb-4 pt-3 sticky-top" style="background:rgb(24, 22, 22);">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                <h1 class=" fs-2"><span class="text-danger fst-italic">ANIME</span>SCROLL</h1>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span class="navbar-toggler-icon"></span></button>
+            <form class="collapse navbar-collapse d-flex justify-content-start align-items-center" id="navmenu">
+                <input type="search" class="collapse navbar-collapse bg-dark border py-2 px-2 h-50 w-25 rounded text-bg-primary" id="navmenu" title = "search"placeholder="search">
+            </form>
+            <nav class="collapse navbar-collapse" id="navmenu">
+                <ul class ="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="HOME.html">HOME</a> </li>
+                    <li class="nav-item"><a class="nav-link" href="EXPLORE.html">EXPLORE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="TV SERIES.html">TV SERIES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="MOVIES.html">MOVIES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="WATCH LIST.html">WATCH LIST</a></li>
+                    <li class="nav-item"><a class="nav-link" href="SIGN UP-IN.html">SIGN UP/IN</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="contact my-4">
+        <div class="contact-container d-flex flex-column flex-md-row w-75 mx-auto my-5">
+            <div class="inform d-flex justify-content-center align-items-center flex-column m-2">
+                <div class="contact-info p-3 m-1 w-100" style="background: #181818;">
+                    <h1 class=" text-center fs-4">CONTACT INFORMATION</h1>
+                    <p>
+                        Email : acychappiekiller@gmail.com<br>
+                        Instagram: @chappiedoom <br>
+                        Facebook: @chappieconnor <br>
+                        Telegram: @cbchaspie
+                    </p>
+                </div>
+                <div class="comment p-3 m-1 w-100" style="background: #181818;">
+                    <form>
+                        <label for="comment">Comment: </label>
+                        <input class=" border-0 text-white mt-2 mb-3 p-4" type="text" style="background: #333;width: 80%;" id ="comment" title ="comment"placeholder="Comment">
+                        <button class=" w-50 text-white border-0 p-2" style="background-color: #623921;" type="submit">submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="contactus d-flex justify-content-center align-items-center text-center p-3 m-2" style="background: #181818;">
+                <p>
+                    If you have business inquiries or other questions,<br> please send an email to: acychappiekiller@gmail.com
+                    if you have any comments regarding this website<br> we will accept any inquiries you might have
+                </p>
+            </div>
+        </div>
+    </section>
+    <footer class="w-100 p-1" style="background:rgb(24, 22, 22);">
+        <ul class="d-flex list-unstyled">
+            <li class="nav-item m-2"> 
+                <a class=" nav-link" href="ABOUT PAGE.html">ABOUT PAGE</a>
+            </li>
+            <li class=" nav-item m-2">
+                <a class="nav-link text-danger" href="CONTACT US.html">CONTACT US</a>
+            </li>
+        </ul>
+        <p class=" text-center">ANIMESCROLL copyright &copy; all rights reserved</p>
+    </footer>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html> 

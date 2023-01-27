@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <style>
+        /* to get the right style for the table i used the next style codes for styling the table */
+        tr:nth-child(odd){
+            background-color: #333;
+        }
+        td:nth-child(odd){
+            background-color: rgba(31, 29, 29,0.4);
+        }
+    </style>
+    <title>ANIMESCROLL EXPLORE</title>
+</head>
+<!-- generally i used inline styling to get background colors
+         ,width and height and positioning amounts that i needed that were not 
+         present in bootstrap -->
+<body class="text-white" style="background: rgb(15, 15, 15);">
+    <header class="navbar navbar-expand-md navbar-dark mb-4 pt-3 sticky-top" style="background:rgb(24, 22, 22);">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                <h1 class=" fs-2"><span class="text-danger fst-italic">ANIME</span>SCROLL</h1>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span class="navbar-toggler-icon"></span></button>
+            <form class="collapse navbar-collapse d-flex justify-content-start align-items-center" id="navmenu">
+                <input type="search" class="collapse navbar-collapse bg-dark border py-2 px-2 h-50 w-25 rounded text-bg-primary" id="navmenu" title = "search"placeholder="search">
+            </form>
+            <nav class="collapse navbar-collapse" id="navmenu">
+                <ul class ="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="HOME.html">HOME</a> </li>
+                    <li class="nav-item"><a class="nav-link" href="EXPLORE.html">EXPLORE</a></li>
+                    <li class="nav-item"><a class="nav-link" href="TV SERIES.html">TV SERIES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="MOVIES.html">MOVIES</a></li>
+                    <li class="nav-item"><a class="nav-link" href="WATCH LIST.html">WATCH LIST</a></li>
+                    <li class="nav-item"><a class="nav-link" href="SIGN UP-IN.html">SIGN UP/IN</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section class="about">
+        <table class="my-4 mx-auto text-center w-75" style="background: rgb(67, 65, 65); height: 500px;">
+            <thead >
+                <tr style="background: #623921;">
+                    <th class="py-2 px-3"><h1 class=" fs-4">ABOUT</h1></th>
+                    <th class="py-2 px-3"><h1 class=" fs-4">DESCRIPTION</h1></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="py-2 px-3"><p>what this website is about</p></td>
+                    <td class="py-2 px-3"><p>This website is a place where anyone can come and find all about any anime of their desire</p></td>
+                </tr>
+                <tr>
+                    <td class="py-2 px-3"><p>The main focus of this website</p></td>
+                    <td class="py-2 px-3"><p>This website is focused on delivering and satisfying the anime needs of anime fans with its on time release of latest episodes and fast updates it is best choice for fans binge watch episodes and keep up with their favourite anime show</p></td>
+                </tr>
+                <tr>
+                    <td class="py-2 px-3"><p>What is found in this website</p></td>
+                    <td class="py-2 px-3"><p>In this website different genres or catagories are found from shounen,seinen and isekai to tv series and movies users can browse anything related to anime as of their liking</p></td>
+                </tr>
+                <tr>
+                    <td class="py-2 px-3"><p>Terms and privacy</p></td>
+                    <td class="py-2 px-3"><p>Users information that is recorded will only be used to better the user experience for later uses and the user privacy and search results are for the user only and privacy of users is uphold very strictly</p></td>
+                </tr>
+                <tr>
+                    <td class="py-2 px-3"><p>Payment</p></td>
+                    <td class="py-2 px-3"><p>This website is built to help people who dont have access to streaming services and cant afford to use them so this website is completely free and will only take payment as a donation to keep us going and deliver the best we can deliver</p></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <footer class="w-100 p-1" style="background:rgb(24, 22, 22);">
+        <ul class="d-flex list-unstyled">
+            <li class="nav-item m-2"> 
+                <a class=" nav-link text-danger" href="ABOUT PAGE.html">ABOUT PAGE</a>
+            </li>
+            <li class=" nav-item m-2">
+                <a class="nav-link" href="CONTACT US.html">CONTACT US</a>
+            </li>
+        </ul>
+        <p class=" text-center">ANIMESCROLL copyright &copy; all rights reserved</p>
+    </footer>
+    <script src="js/bootstrap.bundle.js"></script>
+</body>
+</html> 
